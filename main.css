@@ -3,6 +3,19 @@
 	margin:0;
 }
 
+html{
+	height:100%;
+}
+
+body{
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+	background-color:rgba(220, 150, 120, 0.7) !important;
+}
+
 .face-wrapper{
 	display:flex;
 	align-items:center;
@@ -25,6 +38,19 @@
 	overflow: hidden;
 }
 
+.face-holder2{
+	background-color:none;
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	border:1px solid white;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	overflow:hidden;
+}
+
 
 /*--------------------------
 SETTING OPACITY IS CRUCIAL TO ALTER RENDERING CUE
@@ -33,17 +59,15 @@ THIS CODE.
 ----------------------------*/
 
 .face{
-	width:170px;
-	height:170px;
-	background-image:url("profile.jpg");
+	width:180px;
+	height:180px;
 	background-size:cover;
 	background-repeat:no-repeat;
 	border-radius:50%;
- 	border:1px solid black;
- 	overflow: hidden;
+/* 	border:1px solid black;
+*/ 	overflow: hidden;
  	opacity:0.99;
 }
-
 
 /*-----------------
 TEST FACES 
@@ -58,11 +82,12 @@ TEST FACES
 	opacity:0.99;
 }
 
+
 .mask{
 	position:relative;
 	opacity:0.6;
-	width:170px;
-	height:170px;
+	width:190px;
+	height:190px;
 	transform:translateY(90px);
 	transition:all 0.6s ease-in;
 	border:1px solid transparent;
