@@ -23,6 +23,24 @@ body{
 }
 
 .face-holder{
+	background-color:none;
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	border:2px solid white;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	overflow:hidden;
+
+}
+
+/*
+------OLD FACEHOLDER------
+
+.face-holder2{
+	
 	width:200px;
 	height:200px;
 
@@ -37,19 +55,7 @@ body{
 	
 	overflow: hidden;
 }
-
-.face-holder2{
-	background-color:none;
-	width:200px;
-	height:200px;
-	border-radius:50%;
-	border:1px solid white;
-	
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	overflow:hidden;
-}
+*/
 
 
 /*--------------------------
@@ -73,7 +79,7 @@ THIS CODE.
 TEST FACES 
 ------------------*/
 .chris{	background-image:url("chris.jpg");}.trevor{	background-image:url("trevor.jpg");}
-.shawn{background-image:url("shawn.jpg");}.newton{background-image:url("newton.jpg");}
+.shawn{background-image:url("shawn.jpg");}.rami{background-image:url("profile.jpg");}
 
 
 
@@ -86,18 +92,16 @@ TEST FACES
 .mask{
 	position:relative;
 	opacity:0.6;
-	width:190px;
-	height:190px;
-	transform:translateY(90px);
+	width:180px;
+	height:180px;
+	transform:translateY(50%);
 	transition:all 0.6s ease-in;
-	border:1px solid transparent;
 
 }
 
 .hoverMask{
-	transform:translate(0px, -10px);
+	transform:translate(0px, 5%);
 	transition:all 0.3s ease-out;
-	border:1px solid transparent;
 	
 }
 
@@ -109,14 +113,14 @@ TEST FACES
 	color:white;
 	left: calc(50% - 80px);
 	text-align:center;
-	top:110%;
+	top:100%;
 	opacity:0;
 	transition: all 0.3s ease-in;
 }
 
 .hoverInfo{
 	opacity:1;
-	top:63%;
+	top:70%;
 	transition:all 0.6s ease-out;
 }
 
